@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body{
+    background:linear-gradient(to left, #ff6b81 ,#2575fc);
+}
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* تأثير 3D */
+.slider-3d-container {
+  transform: rotateY(60deg);
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  padding: 10px;
+  border-radius: 12px;
+  transform: rotate(-40deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.swiper-slide-active{
+    background:linear-gradient( to left, #34495e ,#95a5a6) !important; 
+      height: 240px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+/* شكل السلايدر */
+.swiper-box {
+  width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* بطاقة السلايد */
+.slide-box {
+  height: 166px;
+  background:linear-gradient( to left, #00a8ff ,#1abc9c);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.slide-box:hover {
+  transform: scale(1.05);
+}
+
+/* شكل الأزرار */
+.btns-container {
+  margin-top: 350px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-btn {
+  width: 50px;
+  padding: 10px 0;
+  border:  1px solid rgb(7, 201, 245);
+  color: rgb(7, 201, 245);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  transition: background 0.3s ease;
 }
