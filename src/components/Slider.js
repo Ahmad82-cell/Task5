@@ -48,12 +48,13 @@ export default function Slider({ items }) {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
 
-      <div className="btns-container">
+      </div>
+              <div className="btns-container">
         <button className="prev-btn nav-btn">&lt;</button>
         <button className="next-btn nav-btn">&gt;</button>
       </div>
+
     </div>
   );
 }

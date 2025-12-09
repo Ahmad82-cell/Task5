@@ -10,7 +10,7 @@ body{
 
 /* تأثير 3D */
 .slider-3d-container {
-  transform: rotateY(60deg);
+
   transform-style: preserve-3d;
   perspective: 1200px;
   padding: 10px;
@@ -72,4 +72,16 @@ body{
   cursor: pointer;
   font-size: 30px;
   transition: background 0.3s ease;
+}
+@media(max-width:600px){
+.slider-wrapper {
+  flex-direction: column;
+}
+.slider-3d-container{
+  transform: rotate(-40deg) scale(0.58);
+  align-items: start;
+}
+.btns-container{
+  margin-top: 20px;
+}
 }
